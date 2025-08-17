@@ -49,11 +49,67 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: #2c3e50;
-    transition: color 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
 }
 
-.navbar.scrolled .nav-logo a {
-    color: #ecf0f1;
+.logo-icon {
+    font-size: 1.6rem;
+    background: linear-gradient(135deg, #4a90e2, #50c878);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: pulse 2s ease-in-out infinite;
+    filter: drop-shadow(0 0 8px rgba(74, 144, 226, 0.3));
+}
+
+.logo-text {
+    font-family: 'Arial Black', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+}
+
+.logo-text::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #4a90e2, #50c878);
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-logo a:hover .logo-text::after {
+    width: 100%;
+}
+
+.nav-logo a:hover .logo-icon {
+    transform: rotate(15deg) scale(1.1);
+    animation: none;
+}
+
+.navbar.scrolled .nav-logo .logo-icon {
+    background: linear-gradient(135deg, #60a5fa, #34d399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 10px rgba(96, 165, 250, 0.4));
+}
+
+.navbar.scrolled .nav-logo .logo-text {
+    background: linear-gradient(135deg, #e2e8f0, #f1f5f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .nav-menu {
