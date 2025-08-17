@@ -2,6 +2,9 @@
 
 A modern, responsive navigation menu with scroll and hover effects built with HTML, CSS, and JavaScript.
 
+## 🌐 Live Demo
+**View the project live at:** https://rohanraaj2.github.io/PRODIGY_WD_01/
+
 ## Features
 
 ### 🎨 **Visual Effects**
