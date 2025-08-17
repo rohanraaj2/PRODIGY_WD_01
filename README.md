@@ -3,7 +3,8 @@
 A modern, responsive navigation menu with scroll and hover effects built with HTML, CSS, and JavaScript.
 
 ## 🌐 Live Demo
-**View the project live at:** https://rohanraaj2.github.io/PRODIGY_WD_01/
+- Hosted: https://rohanraaj2.github.io/PRODIGY_WD_01/
+- Local: Simply open the `index.html` file in your web browser.
 
 ## Features
 
@@ -116,5 +117,5 @@ transition: all 0.3s ease; /* Change 0.3s to desired duration */
 4. Try the mobile view by resizing your browser window
 5. Use the theme toggle button in the bottom-right corner
 
-## Live Demo
-Simply open the `index.html` file in your web browser to see the interactive navigation menu in action!
+## Privacy
+This site includes Google Analytics for traffic tracking. No personal data is collected.
